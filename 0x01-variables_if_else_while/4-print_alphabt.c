@@ -16,7 +16,7 @@ int main(void)
 			continue;
 		else
 			putchar(alpha[i]);
-
+	}
 	putchar('\n');
 	return (0);
 }
