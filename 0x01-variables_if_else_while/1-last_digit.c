@@ -23,26 +23,26 @@ int main(void)
 	if (n < 0)
 	{
 	if (n > 5)
-	{printf("Last digit of %d is -%c and is greater than 5",
-			n, str[strlen(str)]); }
+	{printf("Last digit of %d is -%c and is greater than 5\n",
+			n, str[strlen(str) - 1]); }
 	else if (n == 0)
-	{printf("Last digit of %d is -%c and is 0", n, str[strlen(str)]); }
+	{printf("Last digit of %d is -%c and is 0\n", n, str[strlen(str) - 1]); }
 	else
 	{
-printf("Last digit of %d is -%c and is less than 6 and not 0",
-		n, str[strlen(str)]); }
+printf("Last digit of %d is -%c and is less than 6 and not 0\n",
+		n, str[strlen(str) - 1]); }
 	}
 	else
 	{
 	if (n > 5)
-	{printf("Last digit of %d is %c and is greater than 5",
-			n, str[strlen(str)]); }
+	{printf("Last digit of %d is %c and is greater than 5\n",
+			n, str[strlen(str) - 1]); }
 	else if (n == 0)
-	{printf("Last digit of %d is %c and is 0", n, str[strlen(str)]); }
+	{printf("Last digit of %d is %c and is 0\n", n, str[strlen(str) - 1]); }
 	else
 	{
-printf("Last digit of %d is %c and is less than 6 and not 0",
-		n, str[strlen(str)]); }
+printf("Last digit of %d is %c and is less than 6 and not 0\n",
+		n, str[strlen(str) - 1]); }
 	}
 	return (0);
 }
