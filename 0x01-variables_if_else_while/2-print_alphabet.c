@@ -7,9 +7,10 @@
  */
 int main(void)
 {
+	int i = 0;
 	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (int i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 		putchar(alpha[26]);
 
 	putchar('\n');
