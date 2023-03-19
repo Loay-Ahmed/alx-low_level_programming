@@ -18,7 +18,7 @@ int main(void)
 				putchar(i);
 				putchar(j);
 				putchar(n);
-				if (i != '8')
+				if (i != '7')
 				{
 					putchar(',');
 					putchar(' ');
