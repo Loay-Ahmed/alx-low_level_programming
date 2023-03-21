@@ -3,7 +3,7 @@
 /**
  * main - prints numbers divisble by 3 or 5
  *
- * Return: nothing
+ * Return: return 0
  */
 int main(void)
 {

@@ -3,9 +3,9 @@
 /**
  * main - prints the first 50 fibonacci
  *
- * Return: nothing
+ * Return: returns 0
  */
-void main(void)
+int main(void)
 {
 	unsigned long i, n1 = 0, n2 = 1, n3;
 
@@ -19,4 +19,5 @@ void main(void)
 			printf(", ");
 	}
 	printf("\n");
+	return (0);
 }
