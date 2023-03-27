@@ -5,7 +5,7 @@
  * that the pointer n points to
  *
  * @n: pointer to int
- * Return: returns n
+ * Return: nothing
  */
 
 void reset_to_98(int *n)
