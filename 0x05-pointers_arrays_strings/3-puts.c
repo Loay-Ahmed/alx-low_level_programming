@@ -3,12 +3,16 @@
 /**
  * _puts - prints a string to the stdout
  *
- * @s: pointer to a string
+ * @str: pointer to a string
  * Return: nothing
  */
 
 void _puts(char *str)
 {
 	while (*str != '\0')
+	{
 		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
 }
