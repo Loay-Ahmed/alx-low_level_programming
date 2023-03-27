@@ -16,12 +16,12 @@ void rev_string(char *s)
 	{
 		len++;
 	}
-
-	for (i = 0; i <= len / 2; i++, len--)
+	len--;
+	for (i = 0; i <= (len / 2) - 1; i++, len--)
 	{
 		tmp = s[i];
-		s[i] = s[len - 1];
-		s[len - 1] = tmp;
+		s[i] = s[len];
+		s[len] = tmp;
 	}
 
 }
