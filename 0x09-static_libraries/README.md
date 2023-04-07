@@ -1,1 +1,1 @@
-# This is the directory for static libraries in c
+# This is the directory for static libraries in c programming
