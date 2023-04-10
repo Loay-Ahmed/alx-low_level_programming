@@ -1,60 +1,48 @@
-#include "main.h"
+#include "ctype.h"
+#include "string.h"
+#include "stdlib.h"
 #include "stdio.h"
 
 /**
- * _atoi - converts the first portion of a string
- * into integer
+ * checknum - checks that all chars are digits
  *
- * @s: pointer to a string
- * Return: 0 if there is no number,
- * otherwise the number in the string
+ * @s: pointer to string
+ * Return: 1 if all digit, 0 otherwise
  */
-int _atoi(char *s)
+int checknum(char *s)
 {
-	int negative = 1, end = 0, num = 0;
+	unsigned int i;
 
-	if (*s < 48 || *s > 57)
-		return (-1);
-
-	while (*s)
+	for (i = 0; i < strlen(s); i++)
 	{
-		if (*s == '-')
-			negative *= -1;
-		while (*s >= 48 && *s <= 57)
-		{
-			end = 1;
-			num = num * 10 + (*s - '0');
-			s++;
-		}
-		if (end == 1)
-			break;
-		s++;
+		if (!isdigit(s[i]))
+			return (0);
 	}
-	return (num * negative);
+	return (1);
 }
 
 /**
- * main - prints the product of two integers
+ * main - adds numbers specified as arguments
  *
  * @argc: number of arguments
- * @argv: arguments values
+ * @argv: value of arguments
  * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
-	int i, n, sum = 0;
+	int i, sum = 0, n;
 
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		if (checknum(argv[i]))
 		{
-			n = _atoi(argv[i]);
-			if (n == -1)
-			{
-				printf("Error\n");
-				return (1);
-			}
+			n = atoi(argv[i]);
 			sum += n;
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
 		}
 	}
 	printf("%d\n", sum);
