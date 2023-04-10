@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 {
 	int coins = 0, n;
 
-	if (!checknum(argv[1]) || argc != 2)
+	if (argc != 2 || !checknum(argv[1]))
 	{
 		printf("Error\n");
 		return (1);
