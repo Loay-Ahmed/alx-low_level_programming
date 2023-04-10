@@ -9,11 +9,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-
-	for (i = 0; i < strlen(argv[0]); i++)
-	{
-		_putchar(argv[0][i]);
-	}
+	_putchar((argc - 1) + '0');
 	_putchar('\n');
 }
