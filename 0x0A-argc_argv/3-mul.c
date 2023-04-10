@@ -8,8 +8,13 @@
  * @argv: arguments values
  * Return: Always 0
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
-	return (0);
+	if (argc == 2)
+	{
+		printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
+		return (0);
+	}
+	printf("Error");
+	return (1);
 }
