@@ -40,11 +40,8 @@ int main(int argc, char *argv[])
 	else
 	{
 		n = atoi(argv[1]);
-		if (n < 0)
+		if (n >= 0)
 		{
-			printf("0\n");
-			return (0);
-		}
 		coins += n / 25;
 		n %= 25;
 		coins += n / 10;
@@ -54,6 +51,7 @@ int main(int argc, char *argv[])
 		coins += n / 2;
 		n %= 2;
 		coins += n;
+		}
 	}
 	printf("%d\n", coins);
 	return (0);
