@@ -3,20 +3,20 @@
 int sqrt(int num, int root);
 
 /**
- * sqrt - the function that gets the sqaure root
+ * _sqrt - the function that gets the sqaure root
  *
  * @num: the number under the square root
  * @root: the value of the square root
  * Return: the value of the square root
  */
-int sqrt(int num, int root)
+int _sqrt(int num, int root)
 {
 	if (root * root == num)
 		return (num);
 	else if (root == num / 2)
 		return (-1);
 	else
-		return (sqrt(num, sqrt++));
+		return (_sqrt(num, ++sqrt));
 }
 
 /**
@@ -34,5 +34,5 @@ int _sqrt_recursion(int n)
 	else if (n == 1)
 		return (1);
 
-	return (sqrt(n, root));
+	return (_sqrt(n, root));
 }
