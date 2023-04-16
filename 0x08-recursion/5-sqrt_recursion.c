@@ -1,6 +1,6 @@
 #include "main.h"
 
-int sqrt(int num, int root);
+int _sqrt(int num, int root);
 
 /**
  * _sqrt - the function that gets the sqaure root
@@ -16,7 +16,7 @@ int _sqrt(int num, int root)
 	else if (root == num / 2)
 		return (-1);
 	else
-		return (_sqrt(num, ++sqrt));
+		return (_sqrt(num, ++root));
 }
 
 /**
