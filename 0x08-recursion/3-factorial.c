@@ -4,7 +4,7 @@
  * factorial - function that gets the factorial of n
  *
  * @n: the number to get its factorial
- * Retrun: value of the factorial
+ * Return: value of the factorial
  */
 
 int factorial(int n)
