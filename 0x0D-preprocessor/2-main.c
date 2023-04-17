@@ -1,0 +1,11 @@
+#include "stdio.h"
+
+/**
+ * main - prints the file name
+ *
+ * Return: 0 (success), 1 (fail)
+ */
+int main(void)
+{
+	printf("%s\n", __FILE__);
+}
