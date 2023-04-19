@@ -32,13 +32,14 @@ int main(int argc, char *argv[])
 		opcode = *(unsigned char *)address;
 		printf("%.2x", opcode);
 
-		if (index != byte - 1)
+		if (index != bytes - 1)
 		{
 			printf(" ");
 			address++;
 		}
 		else
 			continue;
-		printf("\n");
-		return (0);
+	}
+	printf("\n");
+	return (0);
 }
