@@ -1,6 +1,4 @@
 #include "variadic_functions.h"
-#include "stdio.h"
-#include "stdarg.h"
 
 /**
  * print_numbers - prints numbers separated by
@@ -18,7 +16,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 
 	while (i--)
-		printf("%d%s", va_arg(args, int), separator == NULL ? separator : "");
+	{
+		printf("%d", va_arg(args, int));
+		if (separator != NULL)
+			printf("%s", separator);
+	}
 
 	printf("%d\n", va_arg(args, int));
 	va_end(args);
