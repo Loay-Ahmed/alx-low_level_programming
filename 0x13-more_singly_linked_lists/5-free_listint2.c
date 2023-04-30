@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - frees the memory allocated for the list
+ * free_listint22 - frees the memory allocated for the list
  *
  * @head: the start of the list
  * Return: Nothing
