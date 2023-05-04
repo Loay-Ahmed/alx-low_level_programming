@@ -11,9 +11,12 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
+	unsigned int binary;
+
 	if (index < 64)
 	{
-		n = n | (1 << index);
+		binary = 1 << index;
+		*n = (*n | binary);
 		return (1);
 	}
 	return (-1);
