@@ -6,6 +6,7 @@
  * error - handles error of reading and writing
  * @from: the source file
  * @to: the destination file
+ * @argv: the list of arguments
  * Return: Nothing
  */
 
@@ -46,10 +47,10 @@ int main(int argc, char *argv[])
 
 	from = open(argv[1], O_RDONLY);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_APPEND | O_TRUNC, 0664);
-	
+
 	error(from, to, argv);
 	chars = 1024;
-	while(chars == 1024)
+	while (chars == 1024)
 	{
 		chars = read(from, buffer, 1024);
 		if (chars == -1)
